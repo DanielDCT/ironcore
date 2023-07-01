@@ -1,0 +1,101 @@
+img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    }
+
+.darken-image {
+    filter: brightness(60%); /* Ajusta el valor para cambiar el nivel de oscuridad */
+    }
+
+.carousel-caption {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 60px;
+    /* backdrop-filter: blur(2px);
+    background: #00000037; */
+    }
+
+.title {
+    font-size: 45px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: 800;
+    }
+
+.subtitle {
+    font-size: 22px;
+    font-weight: 500;
+    }
+
+.carousel-caption a {
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: 700;
+    border: 2px solid aliceblue;
+    padding: 10px 30px;
+    margin-right: 10px;
+    width: 170px;
+    height: 40px;
+    transition: 0.5s ease-in-out;
+    }
+
+.carousel-caption a:hover {
+    color: #000;
+    }
+
+.animate-button {
+    position: relative;
+    overflow: hidden;
+    }
+    
+.animate-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.3s;
+    }
+    
+.animate-button:hover::after {
+    transform: translate(-50%, -50%) scale(18);
+    opacity: 1;
+    }
+
+@media (max-width: 991px) {        
+    .carousel-caption {
+        width: 80%;
+        }
+    
+    .title {
+        font-size: 30px;
+        }
+    
+    .subtitle {
+        width: 90%;
+        font-size: 14px;
+        text-align: left;
+        font-weight: 500;
+        word-wrap: break-word;
+        }
+    
+    .carousel-caption a {
+        font-size: 13px;
+        width: 110px;
+        height: 35px;
+        }
+    
+    .animate-button:hover::after {
+        transform: translate(-50%, -50%) scale(10);
+        opacity: 1;
+        }
+    }

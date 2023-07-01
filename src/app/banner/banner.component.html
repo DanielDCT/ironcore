@@ -1,0 +1,41 @@
+<ngb-carousel>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img src="../../assets/images/slide1.jpg" alt="Random first slide" class="darken-image" />
+		</div>
+		<div class="carousel-caption">
+			<h1 class="title">Iron Core</h1>
+			<h2 class="subtitle">Entrenamiento personal en Villeta, Cundinamarca</h2>
+			<div class="cont-btn">
+				<a mat-button class="animate-button" (click)="scrollToComponent('planes')">Planes</a>
+				<a mat-button class="animate-button" (click)="scrollToComponent('comments')">Comentarios</a>
+			</div>
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img src="../../assets/images/slide2.jpg" alt="Random second slide" class="darken-image" />
+		</div>
+		<div class="carousel-caption">
+			<h3 class="title">Iron Core</h3>
+			<p class="subtitle">La vida sin salud, no es vida</p>
+			<div class="cont-btn">
+				<a mat-button class="animate-button" (click)="scrollToComponent('planes')">Planes</a>
+				<a mat-button class="animate-button" (click)="scrollToComponent('comments')">Comentarios</a>
+			</div>
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img src="../../assets/images/slide3.jpg" alt="Random third slide" class="darken-image" />
+		</div>
+		<div class="carousel-caption">
+			<h3 class="title">Iron Core</h3>
+			<p class="subtitle">Tu camino hacia un cuerpo más fuerte, más sano</p>
+			<div class="cont-btn">
+				<a mat-button class="animate-button" (click)="scrollToComponent('planes')">Planes</a>
+				<a mat-button class="animate-button" (click)="scrollToComponent('comments')">Comentarios</a>
+			</div>
+		</div>
+	</ng-template>
+</ngb-carousel>

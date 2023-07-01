@@ -1,0 +1,16 @@
+<mat-toolbar color="primary" [ngClass]="{ 'navbar-scrolled': navbarScrolled }" #navbar>
+    <a mat-button (click)="scrollToComponent('incio')" class="logo">IRON CORE</a>
+    <div class="spacer"></div>
+    <div class="menu-container" [class.open]="menuOpen">
+        <a mat-button (click)="scrollToComponent('incio')">Inicio</a>
+        <a mat-button (click)="scrollToComponent('about')">Sobre Mi</a>
+        <a mat-button (click)="scrollToComponent('servicios')">Servicios</a>
+        <a mat-button (click)="scrollToComponent('planes')">Planes</a>
+        <a mat-button (click)="scrollToComponent('comments')">Comentarios</a>
+        <a mat-button (click)="scrollToComponent('contact')">Contacto</a>
+    </div>
+    <button mat-icon-button (click)="menuOpen = !menuOpen" [attr.aria-expanded]="menuOpen ? 'true' : 'false'"
+        [attr.aria-label]="menuOpen ? 'Cerrar menú' : 'Abrir menú'" class="menu-button">
+        <mat-icon>{{ menuOpen ? 'close' : 'menu' }}</mat-icon>
+    </button>
+</mat-toolbar>

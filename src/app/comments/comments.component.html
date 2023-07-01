@@ -1,0 +1,21 @@
+<section>
+    <div class="cont-wave">
+        <img src="../../assets/images/wave.svg" class="w1">
+    </div>
+    <div class="cont-comments">
+        <div class="titulos"><h2>COMENTARIOS</h2></div>
+        <h3 class="subtitle">Descubre las opiniones y experiencias de mis clientes sobre las clases de entrenamiento personal</h3>
+        <div class="slider-container">
+            <div id="comments-container" class="comments-slider">
+            <div *ngFor="let comment of comments" class="comment">
+                <mat-icon class="quote">format_quote</mat-icon>
+                <h3 class="comment-author">{{ comment.author }}</h3>
+                <p class="comment-content">{{ comment.content }}</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont-wave">
+        <img src="../../assets/images/wave 2.svg" class="w2">
+    </div>
+</section>
