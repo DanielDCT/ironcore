@@ -87,6 +87,13 @@ mat-icon {
     min-width: 70%;
     }
 
+@media (max-width: 1400px) {
+    .contactinfobx .box:nth-child(3) {
+        width: 80%;
+        word-wrap: break-word;
+        }
+}
+
 @media (max-width: 991px) {
     section {
         padding: 60px 0;
